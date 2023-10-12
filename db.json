@@ -1,22 +1,5 @@
 {
   "registrations": [
-    {
-      "nome": "Rafael",
-      "idade": "1",
-      "email": "rafaelgaldino.sousa@gmail.com",
-      "tamanho": "G",
-      "inscricao": "5RUN",
-      "valor": "132,90",
-      "id": 1
-    },
-    {
-      "nome": "Rafael",
-      "idade": "1",
-      "email": "rafaelgaldino.sousa@gmail.com",
-      "tamanho": "G",
-      "inscricao": "3RUN",
-      "valor": "1,05",
-      "id": 2
-    }
+    
   ]
 }
