@@ -1,5 +1,13 @@
 {
   "registrations": [
-    
+    {
+      "nome": "teste",
+      "idade": "22",
+      "email": "teste@teste",
+      "tamanho": "p",
+      "inscricao": "3RUN",
+      "valor": "123,45",
+      "id": 1
+    }
   ]
 }
