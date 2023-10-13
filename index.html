@@ -4,70 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajude a Causa</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form action="http://localhost:3000/registrations" method="post">
+    <div class="container-master">
+        <form action="http://localhost:3000/registrations" method="post" autocomplete="off">
+            <h1>Evento da ONG "Ajude a Causa" - Formulário de Inscrições</h1>
+            <hr>
 
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <div>
-                <label for="iNome">Nome:</label>
-                <input type="text" name="nome" id="iNome" required>
+
+            <div class="fieldset pessoal">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="fieldset-pessoal">
+                        <label for="iNome">Nome: </label>
+                        <input type="text" name="nome" id="iNome" required>
+                    </div>
+                    <div class="fieldset-pessoal">
+                        <label for="iIdade">Idade: </label>
+                        <input type="number" name="idade" id="iIdade" required>
+                    </div>
+                </fieldset>
             </div>
-            <div>
-                <label for="iIdade">Idade:</label>
-                <input type="number" name="idade" id="iIdade">
+            <div class="fieldset">
+                <fieldset>
+                    <legend>Contato</legend>
+                    <div class="fieldset-content">
+                        <label for="iEmail">E-mail: </label>
+                        <input type="email" name="email" id="iEmail" required>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Contato</legend>
-            <div>
-                <label for="iEmail">E-mail:</label>
-                <input type="email" name="email" id="iEmail" required>
+            <div class="fieldset">
+                <fieldset>
+                    <legend>Vestimenta</legend>
+                    <div class="fieldset-content">
+                        <label for="iTamanho">Tamanho da Camiseta: </label>
+                        <input type="text" name="tamanho" id="iTamanho" placeholder="P/M/G/GG/XG" required>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Vestimenta</legend>
-            <div>
-                <label for="iTamanho">Tamanho da Camiseta:</label>
-                <input type="text" name="tamanho" id="iTamanho" placeholder="P/M/G/GG/XG" required>
+            <div class="fieldset">
+                <fieldset>
+                    <legend>Inscrição</legend>
+                    <div class="fieldset-content">
+                        <label for="iInsc">Categoria de Inscrição: </label>
+                        <select name="inscricao" id="iInsc" required>
+                            <option value="" selected disabled>--- Escolha uma Categoria---</option>
+                            <option value="3RUN">Corrida 3km [3RUN]</option>
+                            <option value="5RUN">Corrida 5km [5RUN]</option>
+                            <option value="4WALK">Caminhada 4km [4WALK]</option>
+                        </select>
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Inscrição</legend>
-            <div>
-                <label for="iInsc">Categoria de Inscrição</label>
-                <select name="inscricao" id="iInsc">
-                    <option value="" selected disabled>--- Escolha uma Categoria---</option>
-                    <option value="3RUN">Corrida 3km [3RUN]</option>
-                    <option value="5RUN">Corrida 5km [5RUN]</option>
-                    <option value="4WALK">Caminhada 4km [4WALK]</option>
-                </select>
+            <div class="fieldset">
+                <fieldset>
+                    <legend>Doação</legend>
+                    <div class="fieldset-content doacao">
+                        <label for="iValor">Valor da Doação: R$</label>
+                        <input type="text" name="valor" id="iValor">
+                    </div>
+                </fieldset>
             </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>Doação</legend>
-            <div>
-                <label for="iValor">Valor da Doação:</label>
-                <span>R$</span><input type="text" name="valor" id="iValor" required>
+            <div class="btn">
+                <button type="submit" id="enviar">Enviar</button>
+                <button type="reset" id="limpar">Limpar Formulário</button>
             </div>
-        </fieldset>
-
-        <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar Formulário</button>
-        </div>
-
-    </form>
-
+        </form>
+    </div>
     <script src="./app.js"></script>
 </body>
 
