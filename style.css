@@ -91,6 +91,7 @@ fieldset {
     background-color: lightblue;
     color: red;
     font: 1.3rem bolder;
+    cursor: pointer;
 }
 
 input:focus, select:focus {
