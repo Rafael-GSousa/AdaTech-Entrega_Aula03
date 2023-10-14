@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:cursive;
     background: linear-gradient(to left, rgb(50, 54, 51), rgb(17, 46, 63));
 }
 
@@ -34,14 +33,17 @@ h1 {
 
 fieldset legend {
     color: rgb(1, 37, 36);
+    font-size: 1.4rem;
 }
 
 .fieldset:hover {
     background-color: white;
     color: black;
-    border-radius: 10px;
-    transform: translateX(0);
+    border-radius: 8px;
     transition: all .2s ease-in-out;
+
+    box-shadow: 1px 1px 5px rgba(238, 235, 235, 0.999);
+
 }
 
 fieldset {
@@ -82,7 +84,7 @@ fieldset {
     height: 30px;
     background-color: transparent;
     color: white;
-    font: 1.3rem bolder;
+    font: 1.5rem bolder;
     border: none
 }
 
@@ -90,7 +92,7 @@ fieldset {
     height: 30px;
     background-color: lightblue;
     color: red;
-    font: 1.3rem bolder;
+    font: 1.5rem bolder;
     cursor: pointer;
 }
 
@@ -101,9 +103,28 @@ input:focus, select:focus {
 }
 
 label{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-form input, form option {
+form input, form select {
     text-transform: uppercase;
+}
+
+@media  screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
+
+    input {
+        width: 60%;
+    }
+
+    #enviar, #limpar {
+        font-size: 1.3rem;
+        height: auto;
+    }
 }
