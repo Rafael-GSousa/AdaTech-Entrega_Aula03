@@ -8,6 +8,15 @@
       "inscricao": "5RUN",
       "valor": "132,90",
       "id": 1
+    },
+    {
+      "nome": "teste",
+      "idade": "34",
+      "email": "teste@teste",
+      "tamanho": "g",
+      "inscricao": "5RUN",
+      "valor": "12.345,67",
+      "id": 2
     }
   ]
 }
